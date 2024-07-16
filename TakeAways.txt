@@ -1,0 +1,6 @@
+Concepts covered in this 
+1- functions.
+2- Parameters.
+3-Argument.
+4-eval for mathematics.
+5-DOM selecting.
