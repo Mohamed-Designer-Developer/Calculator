@@ -1,15 +1,30 @@
-const displayArea = document.querySelector("#display");
+const input = document.querySelector("#display");
 
-function display(ButtonValue) {
-    displayArea.value += ButtonValue;
-    console.log(displayArea.value);
+function display(value) {
+  input.value += value;
 }
 
-
 function Calculate() {
-    displayArea.value = eval(displayArea.value);
+  try {
+    input.value = eval(input.value);
+  } catch (error) {
+    //   input.value = error.message;
+      input.value = "Error";
+  }
 }
 
 function Clear() {
-    displayArea.value = '';
+  input.value = "";
 }
+
+/* 
+LESSON OBJECTIVES 
+
+Javascript
+1- Parameter and Argument.
+2- Error Handling.
+
+css styling
+:hover :focus :active psuedo classes.
+HSL color Variations.
+*/
